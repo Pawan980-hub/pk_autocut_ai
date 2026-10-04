@@ -26,8 +26,8 @@ dependencies:
   video_player: ^2.8.2
   chewie: ^1.7.4
   
-  # Local Rendering Engine (Zero-Cost On-Device)
-  ffmpeg_kit_flutter_full_gpl: ^6.0.3
+  # Local Rendering Engine (Updated Free FFmpeg Kit)
+  ffmpeg_kit_flutter_new: ^4.6.3
   
   # Networking & APIs (BYOK Hub)
   http: ^1.2.0
@@ -43,8 +43,4 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-
-  assets:
-    - assets/images/
-    - assets/sfx/
-    
+  
