@@ -28,6 +28,8 @@ jobs:
       - name: Generate Android Skeleton
         run: |
           flutter create --platforms=android .
+          sed -i 's/minSdkVersion flutter.minSdkVersion/minSdkVersion 24/g' android/app/build.gradle || true
+          sed -i 's/minSdk = flutter.minSdkVersion/minSdk = 24/g' android/app/build.gradle || true
 
       - name: Get Dependencies
         run: flutter pub get
